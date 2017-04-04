@@ -1,0 +1,36 @@
+<html>
+<head>
+ <!-- <link rel="icon" type="image/png" href="favicon.PNG">-->
+  <title>Comets Travel's</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+<form class="addusrp" action="http://localhost/add_tour.php" enctype="multipart/form-data" method="post">
+	<div class="container col-sm-2">
+			<p class="addusrp">Tour ID: </p>		
+			<p class="addusrp">Name:</p>
+			<p class="addusrp">Description:</p>
+			<p class="addusrp">Cost:</p>
+			<p class="addusrp">Total Qty:</p>
+			<p class="addusrp">Start Date: </p>
+			<p class="addusrp">Image Upload:</p>
+</div>
+<div class="addusrp container col-sm-10">
+ <input type="text" name="id" required="true"><br>
+ <input type="text" name="name" required="true"><br>
+ <input type="textarea" rows="4" cols="50" name="description" required="true"><br>
+<input type="text" name="cost" required="true"><br>
+<input type="text" name="total_qty" required="true"><br>
+ <input type="text" name="start_date" required="true"><br>
+<input name="uploadedimage" type="file" required="true"><br><br>
+	<input class="btn btn-warning" type="submit" value="Add Tour">	
+</div>
+</form>
+
+</div>
+</body>
+</html>

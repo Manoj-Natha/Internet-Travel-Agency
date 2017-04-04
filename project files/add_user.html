@@ -1,0 +1,52 @@
+<html>
+<head>
+
+ <!-- <link rel="icon" type="image/png" href="favicon.PNG">-->
+  <title>Comet Travels</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+
+<script src="jquery-1.9.1.min.js"></script>
+<script src="add_user.js"></script>
+</head>
+<body>
+
+
+	<form class="addusrp" action="http://localhost/add_user.php" method="post" id="userform">
+		<div class="container col-sm-2">
+			<p class="addusrp">User Name: </p>		
+			<p class="addusrp">Password:</p>
+			<p class="addusrp">Confirm Password:</p>
+			<p class="addusrp">First Name:</p>
+			<p class="addusrp">Last Name:</p>
+			<p class="addusrp">Gender: </p>
+			<p class="addusrp">Date of Birth:</p>
+			<p class="addusrp">E-mail ID: </p>
+			<p class="addusrp">Phone Number: </p>
+			<p class="addusrp">Address: </p>		
+			
+	
+</div>
+<div class="addusrp container col-sm-10">
+	<input type="text" name="id" id="user_id" required="true"><br>
+	<input type="password" name="pswd" id="pswd" required="true"><br>
+	<input type="password" name="cpswd" id="cpswd" required="true"><br>
+	<input type="text" name="fname" id="fname" required="true"><br>
+	<input type="text" name="lname" id="lname" required="true"><br><br>
+	<select name="gender">
+						<option value="M">Male</option>
+						<option value="F">Female</option>
+				</select><br>
+	<input type="date" name="dob" required="true"><br>
+	<input type="email" name="email" id="email" required="true"><br>
+	<input type="text" name="pno" id="pno" required="true"><br>
+	<textarea rows="4" cols="25" name="addr" form="userform"></textarea>	<br>
+	<input class="btn btn-warning" type="submit" value="Register" id="user_submit">	
+</div>
+</form>
+
+</body>
+</html>
